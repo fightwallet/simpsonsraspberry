@@ -9,13 +9,10 @@ import threading
 import re
 
 DIRECTORY = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'videos')
-TOUCH_DEVICE_PATH = '/dev/input/event0'
+TOUCH_DEVICE_PATH = '/dev/input/event0' 
 SCREEN_WIDTH = 640
 SCREEN_HEIGHT = 480
 STATIC_VIDEO = os.path.join(DIRECTORY, "../static.mp4") #add this file in the same directory as player.py
-
-
-PRIORITY_VIDEOS = []
 
 playProcess = None  # Track the current omxplayer process
 audioProcess = None  # Track the audio playback process
