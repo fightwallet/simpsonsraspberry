@@ -31,7 +31,7 @@ def getVideos():
 
 
 def playVideos():
-    """Play videos with their respective start positions."""
+    """Play videos"""
     
     global playProcess
     background_layer = 0
