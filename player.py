@@ -84,10 +84,4 @@ touch_thread = threading.Thread(target=monitor_touch)
 touch_thread.daemon = True
 touch_thread.start()
 
-try:
-    playVideos()
-except KeyboardInterrupt:
-    pass
-finally:
-    pi.set_PWM_dutycycle(BACKLIGHT_PIN, BRIGHTNESS_DAY)
-    pi.stop()
+playVideos()
