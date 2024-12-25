@@ -1,0 +1,15 @@
+[Unit]
+Description=tvplayer
+After=pigpiod.service
+Requires=pigpiod.service
+
+[Service]
+WorkingDirectory=/home/pi/simpsonstv/
+ExecStart=/usr/bin/python3 /home/pi/simpsonstv/player.py
+Restart=always
+User=berne
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=multi-user.target
